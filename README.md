@@ -7,8 +7,6 @@
 
 ## Example
 
-![image](https://github.com/legokit/LEGOImageCropper/blob/master/Resources/LEGOImageCropperGif.gif)
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
@@ -39,6 +37,9 @@ pod 'LEGOImageCropper'
 - [x] rotate angle by control.  角度外部控制
 - [x] Angle fine tuning.  角度微调  
 - [x] Double click to reset picture.  双击重置
+
+## Demonstration
+![image](https://github.com/legokit/LEGOImageCropper/blob/master/Resources/LEGOImageCropperGif.gif)
 
 ## Requirements
 
