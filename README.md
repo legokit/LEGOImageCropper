@@ -7,7 +7,7 @@
 
 ## Example
 
-![image](https://github.com/legokit/LEGOAnimation/blob/master/Resources/LEGOImageCropperGif.gif)
+![image](https://github.com/legokit/LEGOImageCropper/blob/master/Resources/LEGOImageCropperGif.gif)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
