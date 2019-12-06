@@ -63,7 +63,7 @@ If you prefer not to use any of the dependency mentioned above, you can integrat
 ## Usage
 
 ```
-/** crop picture */
+/** crop picture 裁剪方法实例 */
 
     [self.imageCropperView cropImageWithComplete:^(UIImage *resizeImage) {
         NSLog(@"resizeImage=%@",resizeImage);
