@@ -24,8 +24,8 @@
 		A59E949FC5430F304BBE1481 /* Pods_LEGOImageCropper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28055296503826DAE3C94AED /* Pods_LEGOImageCropper_Example.framework */; };
 		D2795B811E4BDBA9103436F2 /* Pods_LEGOImageCropper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5434B674D6E28B584DDFE06 /* Pods_LEGOImageCropper_Tests.framework */; };
 		E824D4F72399EA320056AA7E /* LEGOSliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E824D4F32399EA320056AA7E /* LEGOSliderControl.m */; };
-		E824D4F82399EA320056AA7E /* LEGOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E824D4F42399EA320056AA7E /* LEGOViewController.m */; };
 		E824D4F92399EA320056AA7E /* LEGOImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E824D4F52399EA320056AA7E /* LEGOImageCropperViewController.m */; };
+		E83072B923AB102200A08E26 /* LEGOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E83072B823AB102200A08E26 /* LEGOViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,13 +66,13 @@
 		C36472B7DD316D9A4938C818 /* Pods-LEGOImageCropper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEGOImageCropper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LEGOImageCropper_Tests/Pods-LEGOImageCropper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5434B674D6E28B584DDFE06 /* Pods_LEGOImageCropper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEGOImageCropper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F0AA205184A138B1B8CCAA /* Pods-LEGOImageCropper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEGOImageCropper_Example.debug.xcconfig"; path = "Target Support Files/Pods-LEGOImageCropper_Example/Pods-LEGOImageCropper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E824D4EE2399EA320056AA7E /* LEGOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LEGOViewController.h; path = ../../../Desktop/1111/1111/LEGOViewController.h; sourceTree = "<group>"; };
 		E824D4F12399EA320056AA7E /* LEGOImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEGOImageCropperViewController.h; sourceTree = "<group>"; };
 		E824D4F22399EA320056AA7E /* LEGOSliderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEGOSliderControl.h; sourceTree = "<group>"; };
 		E824D4F32399EA320056AA7E /* LEGOSliderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEGOSliderControl.m; sourceTree = "<group>"; };
-		E824D4F42399EA320056AA7E /* LEGOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LEGOViewController.m; path = ../../../Desktop/1111/1111/LEGOViewController.m; sourceTree = "<group>"; };
 		E824D4F52399EA320056AA7E /* LEGOImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEGOImageCropperViewController.m; sourceTree = "<group>"; };
 		E824D4FA2399EA490056AA7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E83072B723AB102200A08E26 /* LEGOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEGOViewController.h; sourceTree = "<group>"; };
+		E83072B823AB102200A08E26 /* LEGOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEGOViewController.m; sourceTree = "<group>"; };
 		FC123FDE3734B3D2445BE3FE /* Pods-LEGOImageCropper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEGOImageCropper_Tests.release.xcconfig"; path = "Target Support Files/Pods-LEGOImageCropper_Tests/Pods-LEGOImageCropper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,8 +152,8 @@
 			children = (
 				6003F59C195388D20070C39A /* LEGOAppDelegate.h */,
 				6003F59D195388D20070C39A /* LEGOAppDelegate.m */,
-				E824D4EE2399EA320056AA7E /* LEGOViewController.h */,
-				E824D4F42399EA320056AA7E /* LEGOViewController.m */,
+				E83072B723AB102200A08E26 /* LEGOViewController.h */,
+				E83072B823AB102200A08E26 /* LEGOViewController.m */,
 				E824D4FA2399EA490056AA7E /* PrefixHeader.pch */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				E824D4F12399EA320056AA7E /* LEGOImageCropperViewController.h */,
@@ -381,9 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83072B923AB102200A08E26 /* LEGOViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LEGOAppDelegate.m in Sources */,
 				E824D4F92399EA320056AA7E /* LEGOImageCropperViewController.m in Sources */,
-				E824D4F82399EA320056AA7E /* LEGOViewController.m in Sources */,
 				E824D4F72399EA320056AA7E /* LEGOSliderControl.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
