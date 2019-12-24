@@ -1,6 +1,5 @@
 # LEGOImageCropper
 
-[![CI Status](https://img.shields.io/travis/564008993@qq.com/LEGOImageCropper.svg?style=flat)](https://travis-ci.org/564008993@qq.com/LEGOImageCropper)
 [![Version](https://img.shields.io/cocoapods/v/LEGOImageCropper.svg?style=flat)](https://cocoapods.org/pods/LEGOImageCropper)
 [![License](https://img.shields.io/cocoapods/l/LEGOImageCropper.svg?style=flat)](https://cocoapods.org/pods/LEGOImageCropper)
 [![Platform](https://img.shields.io/cocoapods/p/LEGOImageCropper.svg?style=flat)](https://cocoapods.org/pods/LEGOImageCropper)
