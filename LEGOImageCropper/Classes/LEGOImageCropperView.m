@@ -589,22 +589,20 @@
     CGRect rotatedImageScrollViewFrame = self.imageScrollView.frame;
     float zoomScale = 1.0 / self.imageScrollView.zoomScale;
     
-    UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.frame = self.imageScrollView.frame;
-    scrollView.contentSize = self.imageScrollView.contentSize;
-    scrollView.contentOffset = self.imageScrollView.contentOffset;
-    scrollView.transform = CGAffineTransformIdentity;
+    CGAffineTransform imageScrollViewTransform = self.imageScrollView.transform;
+    self.imageScrollView.transform = CGAffineTransformIdentity;
     
-    CGRect imageScrollViewFrame = scrollView.frame;
-    scrollView.frame = self.maskRect;
+    CGPoint imageScrollViewContentOffset = self.imageScrollView.contentOffset;
+    CGRect imageScrollViewFrame = self.imageScrollView.frame;
+    self.imageScrollView.frame = self.maskRect;
     
     CGRect imageFrame = CGRectZero;
-    imageFrame.origin.x = CGRectGetMinX(maskRect) - scrollView.contentOffset.x;
-    imageFrame.origin.y = CGRectGetMinY(maskRect) - scrollView.contentOffset.y;
-    imageFrame.size = scrollView.contentSize;
+    imageFrame.origin.x = CGRectGetMinX(maskRect) - self.imageScrollView.contentOffset.x;
+    imageFrame.origin.y = CGRectGetMinY(maskRect) - self.imageScrollView.contentOffset.y;
+    imageFrame.size = self.imageScrollView.contentSize;
     
-    CGFloat tx = CGRectGetMinX(imageFrame) + scrollView.contentOffset.x + CGRectGetWidth(maskRect) * 0.5f;
-    CGFloat ty = CGRectGetMinY(imageFrame) + scrollView.contentOffset.y + CGRectGetHeight(maskRect) * 0.5f;
+    CGFloat tx = CGRectGetMinX(imageFrame) + self.imageScrollView.contentOffset.x + CGRectGetWidth(maskRect) * 0.5f;
+    CGFloat ty = CGRectGetMinY(imageFrame) + self.imageScrollView.contentOffset.y + CGRectGetHeight(maskRect) * 0.5f;
     
     CGFloat sx = CGRectGetWidth(rotatedImageScrollViewFrame) / CGRectGetWidth(imageScrollViewFrame);
     CGFloat sy = CGRectGetHeight(rotatedImageScrollViewFrame) / CGRectGetHeight(imageScrollViewFrame);
@@ -629,8 +627,9 @@
     CGFloat imageScale = self.originalImage.scale;
     cropRect = CGRectApplyAffineTransform(cropRect, CGAffineTransformMakeScale(imageScale, imageScale));
     
-    //    self.imageScrollView.transform = imageScrollViewTransform;
-    //    self.imageScrollView.frame = imageScrollViewFrame;
+    self.imageScrollView.frame = imageScrollViewFrame;
+    self.imageScrollView.contentOffset = imageScrollViewContentOffset;
+    self.imageScrollView.transform = imageScrollViewTransform;
     
     return cropRect;
 }
